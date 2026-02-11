@@ -44,7 +44,7 @@ export function signatureDomainPrefix(
     return domainHash;
 }
 
-function domainDataToSign(data: Buffer, domain: SignatureDomain) {
+export function domainDataToSign(data: Buffer, domain: SignatureDomain) {
     const prefix = signatureDomainPrefix(domain);
     return prefix ? Buffer.concat([prefix, data]) : data;
 }

@@ -106,4 +106,5 @@ export {
     signatureDomainPrefix,
     domainSign,
     domainSignVerify,
+    domainDataToSign,
 } from "./crypto/domainSignature";
